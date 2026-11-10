@@ -16,29 +16,28 @@ h2 {
    2. 全站主題色彩客製化 (覆蓋 CSS 變數)
    ========================================== */
 :root {
-    /* 主題色設定：優雅深藍色 (RGB: 25, 25, 112) */
-    --bs-primary-rgb: 25, 25, 112;
+    /* 核心關鍵：把 #98deef 轉為 RGB 數字 (152, 222, 239)，讓導覽列正確換色 */
+    --bs-primary-rgb: 152, 222, 239;
 
     /* 同步超連結與懸停顏色 */
-    --bs-link-color: rgb(25, 25, 112);
-    --bs-link-hover-color: rgb(15, 15, 80);
+    --bs-link-color: #0088cc;
+    --bs-link-hover-color: #005580;
 }
 
 /* 修改社群圖示按鈕 Hover 背景色 */
 .social-icons .social-icon:hover {
-    background-color: rgb(25, 25, 112);
+    background-color: rgb(152, 222, 239);
 }
 
 /* ==========================================
-   3. 履歷內容區塊背景與邊界優化
+   3. 履歷內容區塊背景優化
    ========================================== */
 .resume-section {
-    background-color: rgb(255, 248, 220); /* 柔和淡黃/乳白色背景 */
-    /* background-image: url('../assets/img/white-wall-3-2.png'); */ /* 可選：紋理圖片 */
+    background-color: #f8fdfd; /* 搭配淺藍色的清爽淺微藍白色背景 */
 }
 
 /* ==========================================
-   4. 作品集排版 (Bento Grid 便當盒風格選用)
+   4. Bento Grid 便當盒風格作品集排版
    ========================================== */
 .bento-grid {
     display: grid;
@@ -48,7 +47,7 @@ h2 {
 
 .bento-item {
     background-color: #ffffff;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e2f3f7;
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
@@ -62,6 +61,6 @@ h2 {
 
 @media (min-width: 768px) {
     .bento-wide {
-        grid-column: span 2; /* 桌面螢幕讓主打作品跨 2 欄 */
+        grid-column: span 2; /* 桌機螢幕下主打作品跨兩欄 */
     }
 }
